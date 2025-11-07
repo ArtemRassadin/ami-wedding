@@ -1,5 +1,5 @@
 {
-  "name": "dreamweave:-interactive-wedding-planner-website",
+  "name": "dreamweave-interactive-wedding-planner-website",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -40,6 +40,6 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "typescript": "~5.8.3",
-    "typescript-eslint": "^8.43.0",
+    "typescript-eslint": "^8.43.0"
   }
 }
