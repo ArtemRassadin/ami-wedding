@@ -44,12 +44,13 @@ import React, { useState, useRef } from 'react';
       const generateCalendar = () => {
         const today = new Date();
         const nextMonth = addMonths(today, 1);
-        const start = startOfMonth(nextMonth);
-        const days = [];
-        for (let i = 0; i < 30; i++) {
-          const day = new Date(start);
-          day.setDate(start.getDate() + i);
-          days.push(day);
+        const start = new Date(); // или ваша начальная дата
+        const days: Date[] = []; // Явно указываем тип массива
+
+        for (let i = 0; i < 7; i++) {
+        const day = new Date(start);
+        day.setDate(start.getDate() + i);
+        days.push(day);
         }
         return days;
       };
